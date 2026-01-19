@@ -1,0 +1,14 @@
+
+services:
+  - type: web
+    name: gestao-salao-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+
+  - type: web
+    name: gestao-salao-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
