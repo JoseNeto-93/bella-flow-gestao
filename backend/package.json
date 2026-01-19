@@ -1,0 +1,21 @@
+{
+  "name": "frontzap-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.5",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0",
+    "nodemailer": "^7.0.12",
+    "stripe": "^12.14.0"
+  }
+}
